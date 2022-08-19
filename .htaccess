@@ -1,0 +1,28 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+#RewriteBase /timestamp-dev/
+
+RewriteRule ^login$ index.php
+RewriteRule ^stamp$ stamps.php
+RewriteRule ^summary-report$ report.php
+RewriteRule ^time-stamp-report$ stamp_report.php
+RewriteRule ^holidays-report$ holidays_report.php
+RewriteRule ^calendar/([^/]*)$ calendars.php?t=$1
+
+RewriteRule ^work-time/([^/]*)$ work_time.php?t=$1
+
+ErrorDocument 404 /index.php
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,131 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 21, 2015, 3:24:48 PM
+    Author     : design
+*/
+.skin-blue .main-header .navbar {
+    background-color: #222d32;
+}
+.skin-blue .main-header .logo {
+    background-color: #222d32;
+    color: #fff;
+    border-bottom: 0 solid transparent;
+}
+
+.box-file {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top: 1px solid #f4f4f4;
+    padding: 10px;
+    background-color: #fff;
+    margin-left:  15px;
+}
+
+#list{
+
+}
+.file-thumb {
+    height: 75px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+}
+.loading {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 45%;
+    width: auto;   
+    border: 5px solid gray;
+    margin: 0;
+    z-index: 9999;
+    background: #FFD34F;
+}
+.loading p{
+    padding: 10px 20px 2px 20px;
+}
+.container-img,.container-file {
+    position: relative;
+}
+/* ----- Image grids ----- */
+.container-img ul.rig {
+    list-style: none;
+    font-size: 0px;
+    margin-left: -8.5%; /* should match li left margin */
+
+}
+.container-img ul.rig li {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 0 2.5% 2.5%;
+    background: #fff;
+    border: 1px solid #ddd;
+    float: left;
+    font-size: 16px;
+    font-size: 1rem;
+    vertical-align: top;
+    box-shadow: 0 0 5px #ddd;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.container-img ul.rig li img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 10px;
+}
+.container-img ul.rig li h3 {
+    margin: 0 0 5px;
+}
+.container-img ul.rig li p {
+    font-size: .9em;
+    line-height: 1.5em;
+    color: #999;
+    margin: 0;
+    text-align: right;
+}
+/* class for 4 columns */
+.container-img ul.rig.columns-4 li {
+    width: 22.5%; /* this value + 2.5 should = 25% */
+}
+.container-file ul.ul-file {
+    list-style: none;
+    font-size: 14px;
+    color: #000;   
+}
+a.disabled-link,
+a.disabled-link:visited ,
+a.disabled-link:active,
+a.disabled-link:hover {
+    background-color:#d9d9d9 !important;
+    color:#aaa !important;
+}
+.sidebar-menu > li.disabled {
+    opacity: 40;
+    pointer-events: none;
+}
+.sidebar-menu > li.disabled > a:hover {
+    cursor: default;
+    text-decoration: none;
+    background-color: inherit;
+}
+.skin-blue .sidebar-menu>li>.treeview-menu > li.disabled {
+    opacity: 40;
+    pointer-events: none;
+}
+.fc-event {
+    font-size: .97em;
+}
+.console{
+    margin-left: 10px;
+}
+
+
+
+
+
