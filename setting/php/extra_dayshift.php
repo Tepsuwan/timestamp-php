@@ -57,11 +57,13 @@ class PHPClass {
                 $sql = "SELECT id FROM t_extra_dayshift WHERE (days='$days') and uid='$this->uid' and status=0";
                 $result = $this->mysqli->query($sql);
                 $num_row = $result->num_rows;
+                echo $sql;
                 if ($num_row === 0) {
 
                     $sql = "INSERT INTO bz_timestamp.t_extra_dayshift (id, work_shift_id, days, uid, create_uid, create_date) VALUES ('$id', '$this->work_shift', '$days', '$this->uid', '$update_uid', '$this->update_date')";
 
                     $result = $this->mysqli->query($sql);
+                    echo $sql;
                 } else {
                     echo json_encode(array("success" => false, "msg_text" => "Have already"));
                     return true;
@@ -82,6 +84,7 @@ class PHPClass {
                     . " WHERE id='$this->id_command'";
             $result = $this->mysqli->query($sql);
         }
+        echo $sql;
         if ($result) {
             $json = array(
                 "success" => true

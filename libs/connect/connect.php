@@ -2,11 +2,9 @@
 
 date_default_timezone_set('Asia/Bangkok');
 
-if ($_SERVER['SERVER_NAME'] == 'timestamp.local') {
+
     define('ENVIRONMENT', 'development');
-} else {
-    define('ENVIRONMENT', 'production');
-}
+
 
 switch (ENVIRONMENT) {
     case 'development':
@@ -37,5 +35,4 @@ if (mysqli_connect_errno()) {
     printf("Connect failed: %s\n", mysqli_connect_error());
     exit();
 }
-
 

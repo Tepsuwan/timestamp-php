@@ -26,7 +26,7 @@ class PHPClass {
                 . " WHERE p.status<>'Y' AND  u.role_key =1"
                 . " AND p.Email='" . $this->username . "' AND p.password='" . md5($this->password) . "'"
                 . " ORDER BY p.id ASC";
-        echo $sql;
+       // echo $sql;
         $result = $this->mysqli->query($sql);
         if ($result) {
             $num_rows = $result->num_rows;
